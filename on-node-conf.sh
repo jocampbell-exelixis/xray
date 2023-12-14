@@ -2,6 +2,8 @@
 
 MOGUL_ACTIVATION_ID=$2
 
+useradd -m -u 1001 -d /home/jmurray -s /bin/bash jmurray
+
 # Customize for Global Phasing
 echo "Setting up Global Phasing Software..."
 echo 'source /opt/ccp4/ccp4-8.0/bin/ccp4.setup-sh' >> /home/slurm/.profile
