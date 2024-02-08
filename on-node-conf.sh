@@ -12,10 +12,6 @@ echo 'export PATH="/opt/xds/XDS-INTEL64_Linux_x86_64:$PATH"' >> /home/slurm/.pro
 echo 'export BDG_TOOL_MOGUL=/opt/csds/CSD_2022/bin/mogul' >> /home/slurm/.profile
 echo 'source /opt/hkl/HKL2000_v722-Linux-x86_64/hkl_setup.sh' >> /home/slurm/.profile
 echo 'source /usr/local/phenix-1.20.1-4487/phenix_env.sh' >> /home/slurm/.profile
-echo "/opt/csds/CSD_2022/bin/ccdc_activator -a -k $MOGUL_ACTIVATION_ID" >> /home/slurm/.bashrc
-echo "/opt/csds/CSD_2022/bin/ccdc_activator -a -k $MOGUL_ACTIVATION_ID" >> /home/ubuntu/.bashrc
-echo "/opt/csds/CSD_2022/bin/ccdc_activator -a -k $MOGUL_ACTIVATION_ID" >> /home/jmurray/.bashrc
-/opt/csds/CSD_2022/bin/ccdc_activator -a -k $MOGUL_ACTIVATION_ID
 export PATH="/opt/pymol/pymol/bin:$PATH"
 export BDG_TOOL_MOGUL=/opt/csds/CSD_2022/bin/mogul
 export PATH="/opt/xds/XDS-INTEL64_Linux_x86_64:$PATH"
