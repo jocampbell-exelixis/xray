@@ -3,6 +3,7 @@
 MOGUL_ACTIVATION_ID=$2
 
 useradd -m -u 1001 -d /home/jmurray -s /bin/bash jmurray
+useradd -m -u 1022 -d /home/jsanders -s /bin/bash jsanders
 
 # Customize for Global Phasing
 echo "Setting up Global Phasing Software..."
