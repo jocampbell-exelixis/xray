@@ -1,5 +1,26 @@
 #!/bin/bash
 
+set -x
+
+echo "Confirming that on node ran" > /usr/local/share/on-node-configure
+
+
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 
+   echo "This script must be run as root" > ~/not_root
+   exit 1
+fi
+
+# Define the CUDA path
+CUDA_PATH=/usr/local/cuda
+
+# Create the environment setup script in /etc/profile.d/
+cat << EOF > /etc/profile.d/cuda.sh
+export PATH=$CUDA_PATH/bin:\$PATH
+export LD_LIBRARY_PATH=$CUDA_PATH/lib64:\$LD_LIBRARY_PATH
+EOF
+
+
 MOGUL_ACTIVATION_ID=$2
 
 S3Bucket='parallelcluster-d1db3a7e7a2cdb9c-v1-do-not-delete'
