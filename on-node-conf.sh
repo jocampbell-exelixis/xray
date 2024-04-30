@@ -8,8 +8,8 @@ S3Bucket='parallelcluster-d1db3a7e7a2cdb9c-v1-do-not-delete'
 sudo aws s3 cp s3://$S3Bucket/xray-software/openeye/oe_license.txt /opt/openeye
 sudo chown -R ubuntu:ubuntu /opt/openeye/oe_license.txt
 
-useradd -m -u 1001 -d /home/jmurray -s /bin/bash jmurray
-useradd -m -u 1022 -d /home/jsanders -s /bin/bash jsanders
+sudo useradd -m -u 1001 -d /home/jmurray -s /bin/bash jmurray
+sudo useradd -m -u 1022 -d /home/jsanders -s /bin/bash jsanders
 
 # Customize for Global Phasing
 echo "Setting up Global Phasing Software..."
