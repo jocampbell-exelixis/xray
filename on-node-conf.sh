@@ -11,7 +11,7 @@ sudo chown -R ubuntu:ubuntu /opt/openeye/oe_license.txt
 sudo groupadd -g 1001 jmurray
 sudo groupadd -g 1022 jsanders
 
-sudo useradd -m -u 1022 -g 1022 -d /home/jmurray -s /bin/bash jmurray
+sudo useradd -m -u 1001 -g 1001 -d /home/jmurray -s /bin/bash jmurray
 sudo useradd -m -u 1022 -g 1022 -d /home/jsanders -s /bin/bash jsanders
 
 # Customize for Global Phasing
