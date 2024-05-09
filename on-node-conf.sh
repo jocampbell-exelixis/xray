@@ -1,5 +1,8 @@
 #!/bin/bash
 
+exec 2>/tmp/debug.$$
+set -x
+
 MOGUL_ACTIVATION_ID=$2
 
 S3Bucket='parallelcluster-d1db3a7e7a2cdb9c-v1-do-not-delete'
