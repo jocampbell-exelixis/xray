@@ -12,6 +12,7 @@ sudo groupadd -g 1001 jmurray
 sudo groupadd -g 1022 jsanders
 
 sudo useradd -m -u 1022 -g 1022 -d /home/jmurray -s /bin/bash jmurray
+sudo useradd -m -u 1021 -g 1021 -d /home/dgurbani -s /bin/bash dgurbani
 sudo useradd -m -u 1022 -g 1022 -d /home/jsanders -s /bin/bash jsanders
 
 # Customize for Global Phasing
