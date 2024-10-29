@@ -19,6 +19,10 @@ sudo useradd -m -u 1001 -g 1001 -d /home/jmurray -s /bin/bash jmurray
 sudo useradd -m -u 1021 -g 1021 -d /home/dgurbani -s /bin/bash dgurbani
 sudo useradd -m -u 1022 -g 1022 -d /home/jsanders -s /bin/bash jsanders
 
+# SCHRODINGER
+export SCHRODINGER=/programs/x86_64-linux/schrodinger_suite/2024-3
+$SCHRODINGER/licadmin INSTALL -c 27008@schrodinger.structuralbio-dev.aws-exelixis.com
+
 # Customize for Global Phasing
 echo "Setting up Global Phasing Software..."
 echo 'source /opt/ccp4/ccp4-8.0/bin/ccp4.setup-sh' >> /home/slurm/.profile
