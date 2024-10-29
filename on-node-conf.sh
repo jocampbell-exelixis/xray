@@ -21,6 +21,7 @@ sudo useradd -m -u 1022 -g 1022 -d /home/jsanders -s /bin/bash jsanders
 
 # SCHRODINGER
 export SCHRODINGER=/programs/x86_64-linux/schrodinger_suite/2024-3
+$SCHRODINGER/utilities/feature_flags --installation-disable SCHRODINGER_LICENSE_MANAGER
 $SCHRODINGER/licadmin INSTALL -c 27008@schrodinger.structuralbio-dev.aws-exelixis.com
 
 # Customize for Global Phasing
