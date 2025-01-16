@@ -40,3 +40,6 @@ source /opt/ccp4/ccp4-8.0/bin/ccp4.setup-sh
 source /opt/hkl/HKL2000_v722-Linux-x86_64/hkl_setup.sh
 source /usr/local/phenix-1.20.1-4487/phenix_env.sh
 echo "Completed setup of Global Phasing Software!"
+
+echo "[INFO] - Creating symlink from /programs to /fsx/packages/sbgrid..."
+sudo ln -sf /fsx/packages/sbgrid /programs
