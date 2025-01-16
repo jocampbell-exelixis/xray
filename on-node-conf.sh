@@ -42,4 +42,5 @@ source /usr/local/phenix-1.20.1-4487/phenix_env.sh
 echo "Completed setup of Global Phasing Software!"
 
 echo "[INFO] - Creating symlink from /programs to /fsx/packages/sbgrid..."
+sudo unlink /programs
 sudo ln -sf /fsx/packages/sbgrid /programs
