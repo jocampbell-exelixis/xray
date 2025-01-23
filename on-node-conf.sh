@@ -14,9 +14,13 @@ sudo chown -R ubuntu:ubuntu /opt/openeye/oe_license.txt
 sudo groupadd -g 1001 jmurray
 sudo groupadd -g 1021 dgurbani
 sudo groupadd -g 1022 jsanders
+sudo groupadd -g 1016 egreen
+sudo groupadd -g 1025 wnicolas
 
 sudo useradd -m -u 1001 -g 1001 -d /home/jmurray -s /bin/bash jmurray
 sudo useradd -m -u 1021 -g 1021 -d /home/dgurbani -s /bin/bash dgurbani
+sudo useradd -m -u 1016 -g 1016 -d /home/egreen -s /bin/bash egreen
+sudo useradd -m -u 1025 -g 1025 -d /home/wnicolas -s /bin/bash wnicolas
 sudo useradd -m -u 1022 -g 1022 -d /home/jsanders -s /bin/bash jsanders
 
 # SCHRODINGER
