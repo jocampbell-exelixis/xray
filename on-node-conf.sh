@@ -16,12 +16,20 @@ sudo groupadd -g 1021 dgurbani
 sudo groupadd -g 1022 jsanders
 sudo groupadd -g 1016 egreen
 sudo groupadd -g 1025 wnicolas
+sudo groupadd -g 1023 zwu
 
 sudo useradd -m -u 1001 -g 1001 -d /home/jmurray -s /bin/bash jmurray
 sudo useradd -m -u 1021 -g 1021 -d /home/dgurbani -s /bin/bash dgurbani
 sudo useradd -m -u 1016 -g 1016 -d /home/egreen -s /bin/bash egreen
 sudo useradd -m -u 1025 -g 1025 -d /home/wnicolas -s /bin/bash wnicolas
 sudo useradd -m -u 1022 -g 1022 -d /home/jsanders -s /bin/bash jsanders
+sudo useradd -m -u 1023 -g 1023 -d /home/zwu -s /bin/bash zwu
+
+sudo usermod -aG sudo jmurray
+sudo usermod -aG sudo dgurbani
+sudo usermod -aG sudo egreen
+sudo usermod -aG sudo wnicolas
+sudo usermod -aG sudo zwu
 
 # SCHRODINGER
 export SCHRODINGER=/programs/x86_64-linux/schrodinger_suite/2024-3
