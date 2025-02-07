@@ -31,6 +31,8 @@ sudo usermod -aG sudo egreen
 sudo usermod -aG sudo wnicolas
 sudo usermod -aG sudo zwu
 
+sudo sed -i /etc/sudoers -re 's/^%sudo.*/%sudo   ALL=(ALL:ALL) NOPASSWD: ALL/g'
+
 # SCHRODINGER
 export SCHRODINGER=/programs/x86_64-linux/schrodinger_suite/2024-3
 $SCHRODINGER/utilities/feature_flags --installation-disable SCHRODINGER_LICENSE_MANAGER
