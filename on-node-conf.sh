@@ -36,8 +36,7 @@ sudo sed -i /etc/sudoers -re 's/^%sudo.*/%sudo   ALL=(ALL:ALL) NOPASSWD: ALL/g'
 # SCHRODINGER
 export SCHRODINGER=/programs/x86_64-linux/schrodinger_suite/2024-3
 $SCHRODINGER/utilities/feature_flags --installation-disable SCHRODINGER_LICENSE_MANAGER
-$SCHRODINGER/licadmin INSTALL -c 27008@schrodinger.structuralbio-dev.aws-exelixis.com
-
+$SCHRODINGER/licadmin install -s schrodinger.structuralbio-dev.aws-exelixis.com:53001
 # Customize for Global Phasing
 echo "Setting up Global Phasing Software..."
 echo 'source /opt/ccp4/ccp4-8.0/bin/ccp4.setup-sh' >> /home/slurm/.profile
